@@ -1,4 +1,7 @@
-# Scrape Center - Movie Crawler Project (ssr2)
+### # 🌐 Live Demo
+
+👉 [Open Live Demo](https://hw-9-gilt.vercel.app/)
+Scrape Center - Movie Crawler Project (ssr2)
 
 This repository contains a concurrent Python crawler that scrapes movie details from https://ssr2.scrape.center and downloads movie cover images locally.
 
