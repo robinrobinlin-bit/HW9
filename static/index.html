@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrape Center | AI Movie Explorer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo">
+                <i class="fa-solid fa-wand-magic-sparkles logo-icon"></i>
+                <span class="logo-text">Scrape<span>Center</span></span>
+            </div>
+            <div class="subtitle">AI Movie Search Explorer</div>
+        </header>
+
+        <!-- Main Workspace -->
+        <main class="app-main">
+            <!-- Left Side: Chat log & Chatbar -->
+            <section class="chat-section">
+                <div class="chat-header">
+                    <i class="fa-solid fa-comments icon-header"></i>
+                    <span>Conversational Search</span>
+                </div>
+                
+                <!-- Chat log -->
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message system">
+                        <div class="message-content">
+                            <p>Hi! I am your AI Scrape Center assistant. Try asking me for rankings, like: "list top 5 ranking" or select a quick chip below!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Action Chips -->
+                <div class="quick-chips">
+                    <button class="chip-btn" data-query="List top 5 ranking">
+                        <i class="fa-solid fa-trophy"></i> Top 5 Movies
+                    </button>
+                    <button class="chip-btn" data-query="Top 5 romance movies">
+                        <i class="fa-solid fa-heart"></i> Romance Top 5
+                    </button>
+                    <button class="chip-btn" data-query="Top 5 action movies">
+                        <i class="fa-solid fa-fire"></i> Action Top 5
+                    </button>
+                    <button class="chip-btn" data-query="Top 5 comedy movies">
+                        <i class="fa-solid fa-face-laugh-beam"></i> Comedy Top 5
+                    </button>
+                </div>
+
+                <!-- Chatbar -->
+                <div class="chatbar-container">
+                    <input type="text" id="chat-input" placeholder="Ask for movie rankings, genres, or search titles..." autocomplete="off">
+                    <button id="send-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Right Side: Movie results display grid -->
+            <section class="results-section">
+                <div class="results-header">
+                    <i class="fa-solid fa-clapperboard icon-header"></i>
+                    <span>Query Results</span>
+                    <span class="results-count" id="results-count">0 movies found</span>
+                </div>
+                <div class="results-grid" id="results-grid">
+                    <!-- Placeholder state when no search is active -->
+                    <div class="placeholder-state" id="placeholder-state">
+                        <i class="fa-solid fa-magnifying-glass placeholder-icon"></i>
+                        <h3>Discover Rankings</h3>
+                        <p>Ask the chatbar to find categories, titles, or general top 5 rankings.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Script Logic -->
+    <script src="/static/script.js"></script>
+</body>
+</html>

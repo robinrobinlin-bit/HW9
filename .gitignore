@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+.vercel/
+~$*.xlsx
+movies_with_covers.xlsx
