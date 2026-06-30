@@ -1,14 +1,28 @@
-### # 🌐 Live Demo
+#### 🎬 Scrape Center - Movie Crawler Project (SSR2)
+
+## 🌐 Live Demo
 
 👉 [Open Live Demo](https://hw-9-gilt.vercel.app/)
+
+## 🚀 Features
+
+- 🤖 AI Movie Search Assistant (Gemini)
+- 🎥 Movie Crawler
+- 🏆 Top 100 Movie Ranking
+- 🔍 Category Search
+- 🖼️ Movie Cover Preview
+- ⚡ FastAPI Backend
+- ☁️ Deploy on Vercel 
 Scrape Center - Movie Crawler Project (ssr2)
 
 This repository contains a concurrent Python crawler that scrapes movie details from https://ssr2.scrape.center and downloads movie cover images locally.
 
-## Project Structure
-- [crawler.py](file:///c:/Users/admin/Desktop/HW9/crawler.py): The main scraping CLI script.
-- [movies.json](file:///c:/Users/admin/Desktop/HW9/movies.json): Raw movie data output.
-- [covers/](file:///c:/Users/admin/Desktop/HW9/covers/): Folder containing local downloaded JPG movie covers.
+#### Project Structure
+
+- [app.py](app.py)
+- [crawler.py](crawler.py)
+- [movies.json](movies.json)
+- [covers](covers/)
 
 ## Scraped Movie Catalog
 
