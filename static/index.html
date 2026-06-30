@@ -34,13 +34,12 @@
                     <span>Gemini AI Search Assistant</span>
                 </div>
                 
-                <!-- Chat log -->
-                <div class="chat-messages" id="chat-messages">
-                    <div class="message system">
-                        <div class="message-content">
-                            <p>Hi! I am your Gemini AI movie assistant. Ask me about movie rankings, genres, comparisons, or custom recommendations from the catalog!</p>
-                        </div>
-                    </div>
+                <!-- Chatbar -->
+                <div class="chatbar-container">
+                    <input type="text" id="chat-input" placeholder="Ask Gemini for movie rankings, genres, or recommendations..." autocomplete="off">
+                    <button id="send-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
                 </div>
 
                 <!-- Quick Action Chips -->
@@ -59,12 +58,13 @@
                     </button>
                 </div>
 
-                <!-- Chatbar -->
-                <div class="chatbar-container">
-                    <input type="text" id="chat-input" placeholder="Ask Gemini for movie rankings, genres, or recommendations..." autocomplete="off">
-                    <button id="send-btn">
-                        <i class="fa-solid fa-paper-plane"></i>
-                    </button>
+                <!-- Chat log -->
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message system">
+                        <div class="message-content">
+                            <p>Hi! I am your Gemini AI movie assistant. Ask me about movie rankings, genres, comparisons, or custom recommendations from the catalog!</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
