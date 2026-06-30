@@ -16,6 +16,21 @@ except ImportError:
 
 # Initialize Gemini Client if API key is present
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+
+# Manually load from .env file if it exists
+dotenv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+if os.path.exists(dotenv_path):
+    try:
+        with open(dotenv_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#"):
+                    k, _, v = line.partition("=")
+                    if k.strip() == "GEMINI_API_KEY":
+                        GEMINI_API_KEY = v.strip().strip('"').strip("'")
+    except Exception as e:
+        print(f"Error loading .env file: {e}")
+
 client = None
 if HAS_GEMINI and GEMINI_API_KEY:
     try:
